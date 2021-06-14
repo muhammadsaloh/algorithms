@@ -1,4 +1,4 @@
-function reverseInt (int){
+var reverse = function (int){
     let str = int + ''
     let reInt = ''
     for(let c of str){
@@ -8,7 +8,9 @@ function reverseInt (int){
 }
 
 console.log(
-    reverseInt(
-        -1323
+    reverse(
+        1534236469
+        
     )
 );
+9646324351
