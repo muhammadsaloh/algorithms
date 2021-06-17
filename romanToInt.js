@@ -27,8 +27,3 @@ console.log(
         "IV"
     )
 );
-
-// yusm sepadigan 
-// 2gb fleshka
-// keks 
-// 
