@@ -1,15 +1,15 @@
 function compress (rawString) {
     let count = 0
-    let compressedString = ""
+    let resultString = ""
     for (let i = 0; i < rawString.length; i++) {
         count ++
-        const currentLetter = rawString[i];
-        if(currentLetter !== rawString[i + 1]) {
-            compressedString += currentLetter + count
+        const currentString = rawString[i];
+        if(currentString !== rawString[i + 1]) {
+            resultString += currentString + count
             count = 0
         }
     }
-    return compressedString.length < rawString.length ? compressedString : rawString    
+    return resultString.length < rawString ? rawString : resultString
 }
 
 let rawString = 'aaaabbbsssdd'
