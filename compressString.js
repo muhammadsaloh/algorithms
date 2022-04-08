@@ -1,18 +1,17 @@
-function compress (rawString) {
-    let count = 0
-    let resultString = ""
-    for (let i = 0; i < rawString.length; i++) {
-        count ++
-        const currentString = rawString[i];
-        if(currentString !== rawString[i + 1]) {
-            resultString += currentString + count
-            count = 0
-        }
+class Solution {
+  solve(str) {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+      let cur = str[i];
+      let next = str[i + 1];
+      if (cur !== next) {
+        result += cur;
+      }
     }
-    return resultString.length < rawString ? rawString : resultString
+    return result;
+  }
 }
 
-let rawString = 'aaaabbbsssdd'
-console.log(`Raw: ${rawString}`);
-const compressed = compress(rawString)
-console.log(`Compressed: ${compressed}`);
+let solution = new Solution();
+
+console.log(solution.solve("aaaaaabbbccccaaaaddf"));
